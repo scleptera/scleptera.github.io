@@ -6,8 +6,13 @@
   </head>
   <body>
     <h1>Meta primitive sequence system expander</h1>
-    <label for="input">input:</label>
-    <input type="text" id="input" name="input" size="40">
+    <div>Input:</div>
+    <textarea id="input" style="width:calc(100% - 8px)" oninput="updateOutput()"></textarea>
+    <label for="nInput">N:</label>
+    <input id="nInput">
+    <div>Output:</div>
+    <textarea id="output" style="width:calc(100% - 8px)" readonly></textarea>
+    <button onclick="outputToInput()">Use output as input</button>
     <script src="script.js"></script>
   </body>
 </html>
